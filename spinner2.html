@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinner</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom right,  magenta, cyan );
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;        
+        }
+
+        .spinner {
+            width: 120px;
+            height: 120px;
+            border-width: 6px;
+            border-style: solid;
+            border-top-color: white;
+            border-left-color: transparent;
+            border-bottom-color: white;
+            border-right-color: transparent;
+            border-radius: 50%;
+            /* animation: spinner 1.3s ease infinite; Short Hand property */
+            animation-name: spinner;
+            animation-duration: 1.3s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes spinner {
+            from {
+                transform: rotate(0turn);
+            }
+
+            to {
+                transform: rotate(1turn);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="spinner"></div>
+</body>
+</html>
